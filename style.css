@@ -1,0 +1,1438 @@
+
+#preloader {
+  position: fixed;
+  inset: 0;
+  background: black;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: sans-serif;
+  z-index: 9999;
+}
+
+#loadingText {
+  font-size: 24px;
+}
+
+.coverLink{
+  width: 1px;
+  height: 1px;
+}
+
+#hbdText{
+   position: absolute;
+   z-index: -1;
+   top: 30px;
+   left: 40px;
+   width: 00px;
+   height: 200px;
+   display: none;
+   pointer-events: none;
+}
+
+.border{
+   position: absolute;
+   z-index: 100;
+   height: 40%;
+   width: 80%;
+   left: 10%;
+   top: 30%;
+   background: pink;
+   border-radius: 20px;
+   border: 2px solid lightcyan;
+}
+
+
+#border2{
+   position: absolute;
+   z-index: 100;
+   height: 40%;
+   width: 80%;
+   left: 10%;
+   top: 30%;
+   border: 2px solid lightcyan;
+   background: pink;
+   border-radius: 20px;
+   
+   
+}
+
+#discoBorder{
+   display:none;
+}
+
+#partyP{
+   color: white;
+   text-shadow: 1px 1px 1px magenta;
+   position: absolute;
+   left: 35%;
+   top: 43%;
+   z-index: 100;
+}
+
+#demonBorder{
+   position: absolute;
+   z-index: 100;
+   width: 70%;
+   height: 80%;
+   left: 12%;
+   top: 10%;
+   border: 10px solid blueviolet;
+}
+
+#cake2{
+   position: fixed;
+   z-index: 100;
+   width: 90%;
+   height: 90%;
+   left: 6%;
+   pointer-events: none;
+}
+
+#claim1{
+   background-image: linear-gradient(to right, #ff7f50, #ffb347); /* Orange to Gold */
+  padding: 15px 30px;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-image 0.3s ease; /* Smooth transition effect */
+  position: absolute;
+  z-index: 102;
+  left: 35%;
+  top: 70%;
+}
+
+#claim1H{
+   font-family: 'Arial', sans-serif; /* Choose your font */
+  font-size: 3em;
+  text-align: center;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Dark shadow */
+  background-image: linear-gradient(to right, cyan, red); /* Green gradient */
+  background-clip: text; /* Apply gradient to text */
+  -webkit-background-clip: text; /* For Safari */
+  color: transparent; /* Make text transparent */
+  position: absolute;
+  z-index: 100;
+  top: 10%;
+  left: 35%;
+}
+
+#claimed{
+         background-image: linear-gradient(to right, gray, white); /* Orange to Gold */
+  padding: 14px 16px;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-weight: bold;
+  transition: background-image 0.3s ease; /* Smooth transition effect */
+  position: absolute;
+  z-index: 101;
+  left: 35%;
+  top: 67.5%;
+  
+}
+
+#darkClaim1{
+   position: absolute;
+   background: black;
+   z-index: 99;
+   height: 100%;
+   width: 100%;
+   left: 0;
+   top: 0;
+   pointer-events: none;
+   opacity: 0;
+}
+
+#exit1{
+   position: absolute;
+   z-index: 101;
+   left: 75%;
+   top: 10%;
+   color: whitesmoke;
+   display: block;
+}
+
+#demonBox{
+
+   display: none;
+   opacity: 0;
+   
+   
+}
+
+
+#cover{
+  background: transparent; 
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  
+  z-index: 100;
+  display: none;
+}
+
+#cover2{
+  background: transparent; 
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  
+  z-index: 100;
+  display: none;
+}
+
+#bulbOn{
+   position: fixed;
+   left: 125px;
+   top: 0;
+   opacity: 1;  
+   z-index: -1;
+}
+
+#bulbOff{
+   position: fixed;
+   opacity: 0.8;
+   width: 60px;
+   height: 99px;
+   position: fixed;
+   left: 144px;
+   top: 700px;
+   Animation: bulbOffAni 4s forwards;
+}
+
+#bulbOn, #bulbOff{
+   transform: rotate(180deg);
+}
+
+@keyframes bulbOffAni{
+   0%{position: fixed;
+   top: 700px;}
+   50%{position: fixed;
+   top: 700px;}
+   100%{position: fixed;
+   top: 0px;}
+}
+
+#swiOn {
+  padding: 12px 28px;
+  font-size: 1em;
+  border: none;
+  border-radius: 20px;
+  background-color: #007bff;
+  color: white;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  cursor: pointer;
+  box-shadow: 0 2px 6px rgba(0, 123, 255, 0.5);
+  position: fixed;
+  bottom: 0;
+  left: 28%;
+  z-index: 10;
+  transition: 3s;
+  opacity: 0;
+}
+
+
+
+/*CONFITE*/
+#confetti-canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  width: 100vw;
+  height: 100vh;
+  z-index: 1000;
+}
+
+#blow1{
+   top: 208px;
+   left: 60px;
+   z-index: 1;
+}
+
+#blow2{
+   top: 196px;
+   left: 170px;
+   z-index: 1;
+}
+
+#blow1, #blow2{
+   width: 100px;
+   height: 100px;
+   position: absolute;
+   opacity: 0;
+}
+
+#cake{
+   width: 200px;
+   height: 200px;
+   position: fixed;
+   left: 70px;
+   top: 500px;
+   opacity: 0;
+   
+   }
+
+#byeon {
+   position: fixed;
+   left: 0;
+   top: 200px;
+   width: 150px;
+   height: 150px;
+}
+
+#park {
+   position: fixed;
+   width: 150px;
+   height: 150px;
+   top: 130px;
+   right: 0;
+}
+
+#jenny {
+   position: fixed;
+   width: 130px;
+   height: 130px;
+   z-index: -1;
+   top: 160px;
+   left: 45px;
+}
+
+#seong {
+   position: fixed;
+   width: 130px;
+   height: 150px;
+   top: 175px;
+   left: -40px;
+   z-index: -1;
+   opacity: 0;
+}
+
+#jennyNo {
+   position: fixed;
+   width: 130px;
+   height: 130px;
+   z-index: -1;
+   top: 500px;
+   left: 60px;
+   display: none;
+}
+
+#seongAngry {
+   position: fixed;
+   width: 130px;
+   height: 150px;
+   top: 173px;
+   left: -40px;
+   z-index: -1;
+   display: none;
+}
+
+#stellvester {
+   position: fixed;
+   width: 130px;
+   height: 150px;
+   top: 330px;
+   left: -40px;
+   z-index: 2;
+   transform: scaleX(-1);
+}
+
+#sae {
+   position: fixed;
+   width: 130px;
+   height: 150px;
+   top: 210px;
+   right: 0px;
+   z-index: 2;
+}
+
+#jiaxu {
+   position: fixed;
+   width: 130px;
+   height: 150px;
+   top: 275px;
+   right: 40px;
+   z-index: 3;
+}
+
+#yoon {
+   position: fixed;
+   width: 130px;
+   height: 150px;
+   top: 300px;
+   right: 0px;
+   z-index: 3;
+}
+
+#kento {
+   position: fixed;
+   width: 130px;
+   height: 150px;
+   top: 315px;
+   left: 40px;
+   z-index: 1;
+}
+
+#sangyan {
+   position: fixed;
+   width: 130px;
+   height: 150px;
+   top: 240px;
+   right: 125px;
+   z-index: 0;
+}
+
+#thanos {
+   position: fixed;
+   width: 130px;
+   height: 130px;
+   top: 200px;
+   right: 120px;
+   z-index: -1;
+}
+
+#thanosMouth {
+   position: fixed;
+   width: 150px;
+   height: 150px;
+   top: 200px;
+   right: 110px;
+   z-index: -1;
+   display: none;
+}
+
+#thanosHappy {
+   position: fixed;
+   width: 100px;
+   height: 120px;
+   top: 210px;
+   right: 140px;
+   z-index: -1;
+   display: none;
+}
+
+#front {
+   position: fixed;
+   width: 170px;
+   height: 180px;
+   top: 270px;
+   left: -80px;
+   z-index: 1.5;
+   transform: scaleX(-1);
+}
+
+
+#cardSquid{
+   position: absolute;
+   z-index: 0;
+   width: 100px;
+   height: 100px;
+   top: 420px;
+   left: 160px;
+   opacity: 0;
+}
+
+#b1{
+   position: absolute;
+   width: 140px;
+   height: 50px;
+   top: 160px;
+   left: 45px;
+   opacity: 0;
+}
+
+#b1t{
+   color: white;
+   position: absolute;
+   top: 153px;
+   left: 75px;
+   opacity: 0;
+}
+
+
+#b2{
+   position: absolute;
+   width: 157px;
+   height: 100px;
+   top: 450px;
+   left: 160px;
+   opacity: 0;
+}
+
+#b3{
+   position: absolute;
+   width: 157px;
+   height: 100px;
+   top: 450px;
+   left: 160px;
+   opacity: 1;
+   display: none;
+}
+
+#b4{
+   position: absolute;
+   width: 157px;
+   height: 100px;
+   top: 150px;
+   left: 40px;
+   opacity: 1;
+   display: none;
+}
+
+#b2t{
+   color: white;
+   position: absolute;
+   top: 453px;
+   left: 175px;
+   opacity: 0;
+}
+
+#b3t{
+   color: white;
+   position: absolute;
+   top: 479px;
+   left: 205px;
+   opacity: 0;
+}
+
+#b4t{
+   color: white;
+   position: absolute;
+   top: 455px;
+   left: 180px;
+   opacity: 1;
+   display: none;
+}
+
+#b5t{
+   color: white;
+   position: absolute;
+   top: 460px;
+   left: 185px;
+   opacity: 1;
+   display: none;
+}
+
+#b6t{
+   position: absolute;
+   width: 157px;
+   height: 100px;
+   top: 155px;
+   left: 65px;
+   color: red;
+   opacity: 1;
+   display: none;
+}
+
+
+
+
+/*GIFT BOX CSS*/
+  #gift{
+               transform-origin: center center;
+                position:absolute;
+                background-color:#e2d442;
+               /*
+                top:150px;
+                left:50px;
+                */
+                /*
+                top: 530px;
+                left: 150px;
+                */
+                top: 190px;
+                left: 25px;
+                height:120px;
+                width:120px;
+                border:1px solid;
+               z-index: -1;
+            }
+            #ribbon4{
+                position:absolute;
+                background-color:red;
+                left:45px;
+                height:120px;
+                width:30px;
+            }
+            #lid{
+               transform-origin: center center;
+                position:absolute;
+                background-color:#e2d442;
+                /*
+                top:130px;
+                left:45px;
+                */
+                /*
+                top:510px;
+                left:145px;
+                */
+                top: 170px;
+                left: 20px;
+                height:20px;
+                width:130px;
+                border:1px solid;
+                z-index: 10;
+            }
+            #ribbon3{
+                position:relative;
+                background-color:red;
+                left:50px;
+                height:20px;
+                width:30px;
+            }
+            #ribbon2{
+                position:absolute;
+                background-color:red;
+                top:-35px;
+                left:20px;
+                height:30px;
+                width:45px;
+                transform:skewY(40deg);
+            }
+            #ribbon1{
+                position:absolute;
+                background-color:red;
+                top:-35px;
+                left:65px;
+                height:30px;
+                width:45px;
+                transform:skewY(-40deg);
+            }
+            @keyframes open{
+                0%{
+                    top:510px;
+                    left:145px;
+                }
+                20%{
+                    top:490px;
+                    left:165px;
+                    transform:rotate(10deg);
+                }
+                40%{
+                    top:475px;
+                    left:175px;
+                    transform:rotate(20deg);
+                }
+                100%{
+                    top:440px;
+                    left:185px;
+                    transform:rotate(60deg);
+                }
+            }
+
+#giftBox{
+   display: none;
+}
+
+@keyframes giftAni{
+   0%{
+      position: absolute;
+      z-index: -1;
+      top: 190px;
+      left: 25px;
+      transform: rotate(0deg);
+   }
+   100%{
+      position: absolute;
+      top: 530px;
+      left: 150px;
+      z-index: 1;
+      transform: rotate(360deg);
+   }
+}
+
+@keyframes lidAni{
+   0%{
+     top: 170px;
+     left: 20px; 
+     z-index: -1;
+     
+   }
+   100%{
+      top:510px;
+      left:145px;
+      z-index: 1;
+      
+   }
+}
+
+@keyframes giftBoxAni{
+   0%{
+      transform: rotate(0deg);
+      transform-origin: center center;
+   }
+   100%{
+      transform: rotate(360deg);
+      transform-origin: center center;
+   }
+}
+
+@keyframes bAni{
+   0%{opacity: 0;}
+   20%{opacity: 0;}
+   75%{opacity: 1;}
+   100%{opacity: 0;}
+}
+
+@keyframes btAni{
+   0%{opacity: 0;}
+   25%{opacity: 0;}
+   50%{opacity: 0;}
+   75%{opacity: 1;}
+   100%{opacity: 0;}
+}
+
+@keyframes blowAni{
+   0%{opacity: 0;}
+   10%{opacity: 1}
+   90%{opacity: 1}
+   100%{opacity: 0}
+}
+
+@keyframes jennyMoveAni{
+   0%{position: absolute;
+   top: 100px;
+   left: 30px;
+   }
+   25%{
+   position: absolute;
+   top: 160px;
+   left: 70px;
+   }
+   30%{
+   position: absolute;
+   top: 130px;
+   left: 30px;
+   opacity: 0;
+   }
+   80%{
+   position: absolute;
+   top: 500px;
+   left: 60px;
+   
+   opacity: 0;
+   }
+   100%{
+   position: absolute;
+   top: 500px;
+   left: 60px;
+   opacity: 1;
+   
+   }
+}
+
+@keyframes cakeAni{
+   0%{
+      position: absolute;
+      left: 50px;
+      top: 500px;
+      opacity: 0;
+   }
+   80%{
+      position: absolute;
+      left: 50px;
+      top: 500px;
+      opacity: 0;
+   }
+   100%{
+      position: absolute;
+      left: 70px;
+      top: 500px;
+      opacity: 1;
+   }
+}
+
+@keyframes b2{
+  0%{opacity: 0;}
+  10%{opacity: 0;}
+  40%{opacity: 1;}
+  55%{opacity: 1;}
+  80%{opacity: 1;}
+  100%{opacity: 0}
+}
+
+@keyframes b2_{
+   0%{opacity: 0;}
+   10%{opacity: 0;}
+  40%{opacity: 0;}
+  55%{opacity: 1;}
+  75%{opacity: 0;}
+  90%{opacity: 0;}
+}
+
+@keyframes cakeThrowAni{
+  0%{transform: rotate(0);
+  
+    }
+   100%{
+      transform: rotate(360deg);
+    
+   }
+}
+
+@keyframes thanosAni{
+   0%{transform: scaleX(1);
+      
+   }
+   25%{
+      transform: scaleX(1);
+   }
+   50%{transform: scaleX(-1);
+      
+   }
+   70%{
+      transform: scaleX(-1);
+   }
+   100%{transform: scaleX(1);
+   
+   }
+}
+
+@keyframes thanosEatAni{
+   0%{
+      transform: scale(2);
+   }
+   100%{
+      transform: scale(1);
+   }
+}
+
+@keyframes darkClaim1Ani{
+   0%{
+      opacity: 0;
+   }
+   100%{
+      opacity: 0.5;
+   }
+}
+
+@keyframes darkClaim2Ani{
+   0%{
+      opacity: 0.5;
+   }
+   100%{
+      opacity: 0;
+   }
+}
+
+@keyframes frontAni{
+   0%{
+      position: absolute;
+      top: 270px;
+      left: -80px;
+      
+      
+   }
+   50%{
+      position: absolute;
+      top: 190px;
+      left: -80px;
+      
+      
+      
+   }
+   100%{
+      position: absolute;
+      top: 270px;
+      left: -80px;
+      
+   }
+}
+
+@keyframes frontAni2{
+   0%{
+   top: 270px;
+   left: -80px;
+   z-index: 1.5;
+   }
+   100%{
+   top: 500px;
+   left: 60px;
+   z-index: 1.5;
+   }
+}
+
+@keyframes cardSquidAni{
+   0%{
+   transform: translateY(100px);
+   opacity: 0;
+   }
+   100%{
+   transform: translateY(20px);
+   opacity: 1;
+   }
+}
+
+@keyframes seongAngryAni{
+   0%{
+      transform: scale(1);
+   }
+   50%{
+      transform: scale(1.3);
+   }
+   100%{
+      transform: scale(1);
+   }
+}
+
+
+@keyframes squidClaim1Ani{
+   0%{
+      opacity: 0;
+   }
+   100%{
+      opacity: 0.5;
+   }
+}
+
+@keyframes squidClaim2Ani{
+   0%{
+      opacity: 0.5;
+   }
+   100%{
+      opacity: 0;
+   }
+}
+
+@keyframes hbdTextAni{
+   0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(-10deg);
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+  75% {
+    transform: rotate(10deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes clickAnyAni{
+   from{opacity: 0;}
+   to{opacity: 1;}
+}
+
+
+
+
+/* Example animation */
+.byeon, .jenny, .park, .stellvester , .sae,
+.yoon, .jiaxu, .kento, .sangyan, .thanos, .seong ,.front{
+  opacity: 0;
+  
+}
+
+
+
+@keyframes discoAni1{
+   from {
+    clip-path: inset(100% 0 0 0); /* hidden from top */
+  }
+  to {
+    clip-path: inset(0 0 0 0); /* fully visible */
+  }
+}
+
+
+
+#box{
+   display: none;
+}
+
+#q1{
+   position: absolute;
+   z-index: 100;
+   left: 30%;
+   top: 40%;
+   color: black;
+   text-shadow: 0px 1px white;
+}
+
+#yes1, #no1{
+   position: absolute;
+   z-index: 100;
+   left: 30%;
+   top: 50%;
+   
+}
+
+#no1{
+   left: 60%;
+   color: red;
+}
+
+#yes3{
+position: absolute;
+   z-index: 100;
+   left: 43%;
+   top: 55%;
+   width: 50px;
+   color: darkgoldenrod;
+   
+}
+   
+
+#squidBorGreen, #squidBorRed{
+   position: absolute;
+   z-index: 100;
+   width: 80%;
+   height: 90%;
+   pointer-events: none;
+   left:10%;
+   top: 5%;
+   border-radius: 30px;
+}
+
+#squidBox{
+
+   display: none;
+   opacity: 0;
+   
+   
+}
+
+#cardSquidClaim{
+   position: absolute;
+   z-index: 101;
+   width: 200px;
+   height: 200px;
+   top: 250px;
+   left: 80px;
+}
+
+#squidClaim {
+  background-color: #000; /* Black background */
+  color: #fff; /* White text */
+  border: 2px solid #fff; /* White border */
+  border-radius: 5px; /* Slightly rounded corners */
+  padding: 15px 30px; /* Adjust padding as needed */
+  font-size: 18px; /* Adjust font size as needed */
+  font-weight: bold; /* Bold text */
+  cursor: pointer; /* Indicate it's clickable */
+  transition: background-color 0.3s ease, transform 0.1s ease; /* Smooth transitions */
+  z-index: 101;
+  position: absolute;
+  top: 470px;
+  left: 120px;
+}
+
+#squidClaim:hover {
+  background-color: #f00; /* Red on hover */
+  transform: scale(1.05); /* Slight scaling effect */
+}
+
+#squidClaim:active {
+  background-color: #800; /* Darker red when pressed */
+  transform: scale(1); /* Reset scale */
+  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.5); /* Inner shadow for pressed effect */
+}
+
+#exit2{
+   position: absolute;
+   z-index: 100;
+   color: white;
+   right: 50px;
+   top: 30px;
+}
+
+#frontManTimeCover{
+   position: absolute;
+   z-index: 1000;
+   background: transparent;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   display: none;
+}
+
+/*FIREWORK CSS*/
+canvas {
+  display: block;
+  position: absolute;
+  z-index: 1000;
+  pointer-events: none;
+}
+
+
+
+
+
+#borderMask {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: black;
+  z-index: -1;
+}
+
+@keyframes borderFade {
+  0% {
+    clip-path: inset(0 0 0 0);
+    opacity: 1;
+  }
+  100% {
+    clip-path: inset(100% 0 0 0); /* Hide from top to bottom */
+    opacity: 0;
+  }
+}
+
+
+
+
+
+
+#gradientBox {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(270deg, red, orange, yellow, green, blue, indigo, violet);
+  background-size: 1400% 1400%;
+  animation: gradientFlow 3s ease infinite;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -100;
+  opacity: 0;
+ pointer-events: none;
+}
+
+@keyframes gradientFlow {
+  0% { background-position: 0% 50%; }
+  100% { background-position: 100% 50%; }
+}
+
+#discoSilver{
+position: fixed;
+top: 0;
+left: 125px;
+width: 100px;
+height: 110px;
+pointer-events: none;
+z-index: 100;
+
+opacity: 0;
+}
+
+#discoGold{
+position: fixed;
+top: 0;
+left: 125px;
+width: 100px;
+height: 110px;
+opacity: 0;
+pointer-events: none;
+z-index: 100;
+transform: translateY(250px)
+scale(5);
+}
+
+
+
+@keyframes discoAni2{
+   0%{
+      transform: scale(1);
+   }
+   100%{
+      transform: scale(1.1);
+   }
+}
+
+@keyframes discoGoldAni{
+   0%{
+      opacity: 0;
+      transform: translateY(250px)
+scale(5);
+   }
+   30%{
+      opacity: 1;
+    transform: translateY(250px)
+scale(5);
+   }
+   90%{
+      opacity: 1;
+      transform: translateY(0px)
+scale(1);
+   }
+   100%{
+      opacity: 1;
+      transform: translateY(0px)
+scale(1);
+   }
+}
+
+
+
+@keyframes discoSilverAni{
+   0%{
+      opacity: 1;
+      transform: 
+scale(1);
+   }
+   30%{
+      opacity: 1;
+   transform: translateY(250px)
+scale(5);
+   }
+   60%{
+opacity: 0;
+      transform: translateY(250px)
+scale(5);
+   }
+   90%{
+      opacity: 0;
+      transform: translateY(250px)
+scale(5);
+   }
+   100%{
+      
+      opacity: 0;
+      transform: translateY(250px)
+scale(5);
+   }
+}
+
+
+
+
+
+#confetti-canvas2{
+   position: absolute;
+   left: 0;
+   top:0;
+}
+
+
+#firework2{
+   position: absolute;
+   z-index: 100;
+   padding: 12px 24px;
+  font-size: 18px;
+  background: linear-gradient(45deg, #ff416c, #ff4b2b);
+  color: white;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  box-shadow: 0 0 20px #ff4b2b, 0 0 40px #ff416c;
+  transition: all 0.3s ease;
+  animation: pulse 2s infinite;
+  left: 30%;
+  bottom: 20%;
+  display: none;
+}
+
+
+#firework2:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 25px #ff6b6b, 0 0 50px #ff416c;
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 100px #ff4b2b, 0 0 40px #ff416c;
+  }
+  50% {
+    box-shadow: 0 0 150px #ff6b6b, 0 0 60px #ff4b2b;
+  }
+  100% {
+    box-shadow: 0 0 100px #ff4b2b, 0 0 40px #ff416c;
+  }
+}
+
+
+
+
+
+
+/*MESSAGE CSS*/
+#startBtn2 {
+  padding: 12px 24px;
+  font-size: 20px;
+  background: #0ff;
+  color: #000;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-bottom: 20px;
+  box-shadow: 0 0 10px #0ff, 0 0 20px #0ff;
+  transition: background 0.3s;
+  position: absolute;
+  z-index: 200;
+  left: 37%;
+  top: 43%;
+  display: none;
+  opacity: 0;
+}
+
+#startBtn:hover {
+  background: #00eaff;
+}
+
+#message {
+  padding: 20px 40px;
+  font-size: 24px;
+  border-radius: 12px;
+  background: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+  border: 2px solid #0ff;
+  box-shadow:
+    0 0 10px #0ff,
+    0 0 20px #0ff,
+    0 0 40px #0ff;
+  animation: pulseGlow 2s infinite;
+  text-align: center;
+  margin-top: 115px;
+  
+}
+
+@keyframes pulseGlow {
+  0% {
+    box-shadow:
+      0 0 10px #0ff,
+      0 0 20px #0ff,
+      0 0 40px #0ff;
+  }
+  50% {
+    box-shadow:
+      0 0 15px #0ff,
+      0 0 30px #0ff,
+      0 0 60px #0ff;
+  }
+  100% {
+    box-shadow:
+      0 0 10px #0ff,
+      0 0 20px #0ff,
+      0 0 40px #0ff;
+  }
+}
+
+
+
+
+
+
+/*MESSAGE GRADIENT*/
+
+
+
+/* Target all character elements */
+
+
+/* Glowing animation */
+@keyframes glow {
+  0%, 100% {
+    filter: drop-shadow(0 0 6px #fff);
+  }
+  50% {
+    filter: drop-shadow(0 0 12px #00faff);
+  }
+}
+
+@keyframes moveDown{
+  0%{
+    transform: translateY(0);
+  }
+  100%{
+    transform: translateY(190px);
+  }
+}
+
+
+
+/*JAMES MESSAGE CSS*/
+#finalTitle {
+  font-size: 3em;
+  color: #00faff;
+  text-shadow: 0 0 10px #00faff, 0 0 20px #00faff;
+  animation: glowText 2s ease-in-out infinite alternate;
+  margin-bottom: 30px;
+  pointer-events: none;
+  margin-left: 10%;
+}
+
+@keyframes glowText {
+  from {
+    text-shadow: 0 0 10px #00faff, 0 0 20px #00faff;
+  }
+  to {
+    text-shadow: 0 0 20px #00ffff, 0 0 40px #00ffff;
+  }
+}
+
+#jamesMessage {
+  padding: 12px 20px;
+  border: none;
+  border-radius: 25px;
+  font-size: 1em;
+  width: 280px;
+  outline: none;
+  transition: 0.3s;
+  background: #121212;
+  color: #fff;
+  box-shadow: 0 0 10px #00faff50;
+}
+
+#jamesMessage::placeholder {
+  color: #aaa;
+  opacity: 0.7;
+}
+
+#jamesMessage:focus {
+  box-shadow: 0 0 15px #00faff, 0 0 25px #00faff;
+  background: #1c1c1c;
+}
+
+#send {
+  padding: 12px 25px;
+  font-size: 1em;
+  border: none;
+  border-radius: 25px;
+  background: linear-gradient(135deg, #00faff, #6f00ff);
+  color: #fff;
+  cursor: pointer;
+  transition: 0.3s ease;
+  box-shadow: 0 0 12px #00faff80, 0 0 24px #6f00ff60;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  
+}
+
+#send:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px #00faff, 0 0 40px #6f00ff;
+  background: linear-gradient(135deg, #6f00ff, #00faff);
+}
+
+
+#review{
+  position: fixed;
+  z-index: 111;
+  
+  display: none;
+  opacity: 0;
+  
+}
+
+#name{
+  color: lime;
+  display: inline;
+}

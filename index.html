@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>한나 생일🎁</title>
+  <link rel="stylesheet" href="style.css">
+  
+    <!-- EmailJS SDK -->
+  <script type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+  </script>
+
+  <script type="text/javascript">
+    (function () {
+      emailjs.init({
+        publicKey: "t8yN3ILBMj_emxnHe", // your public key
+      });
+    })();
+  </script>
+</head>
+<body>
+<img src="coverLink.jpg" class="coverLink">
+<script>alert("This website will only work on mobile")</script>
+
+
+<div id="preloader">
+  <h2 id="loadingText">Loading... 0%</h2>
+</div>
+
+<div id="mainContent" style="display: none;">
+  <!-- All your website content goes here -->
+
+
+
+
+
+<h2 id="clickAny" style="position: absolute; bottom: 0px; z-index: 1000; text-shadow: 2px 2px gray; display: block;"></h2>
+<h2 id="clickAny2" style="position: absolute; bottom: 0px; z-index: 1000; text-shadow: 2px 2px gray; display: none;"></h2>
+
+<div id="cover"></div>
+<div id="cover2"></div>
+
+<img src="hbdText.png" id="hbdText">
+<img src="bulbOff.png" id="bulbOff"/>
+<img src="bulbOn.png" id="bulbOn"/>
+
+<button id="swiOn">Switch On</button>
+<audio src="click.mp3" id="audioPlayer"></audio>
+<audio src="confetti.mp3" id="confettiAudio" preload="auto"></audio>
+<audio src="demonS.mp3" id="demonS" preload="auto"></audio>
+
+<canvas id="confetti-canvas"></canvas>
+
+<audio src="blowS.mp3" id="blowS" preload="auto"></audio>
+<audio src="suprise.mp3" id="suprise" preload="auto"></audio>
+<audio src="hbdH.mp3" id="hbdH" preload="auto"></audio>
+<audio src="bite.mp3" id="bite"></audio>
+<audio src="jennyYes.mp3" id="jennyYes" preload="auto"></audio>
+<audio src="whistle.mp3" id="whistle" preload="auto"></audio>
+<audio src="squidSound.mp3" id="squidSound"></audio>
+<audio src="hbd.mp3" id="hbd" preload="auto" loop autoplay></audio>
+
+<img src="cake.gif" id="cake">
+
+
+<img src="blow1.gif" id="blow1">
+<img src="blow2.gif" id="blow2">
+
+<img src="byeon.png" id="byeon" class="byeon">
+<img src="b1.png" id="b1">
+<h3 id="b1t">Surprise!!!</h3>
+
+<img src="park.png" id="park" class="park">
+
+<img src="jenny.png" id="jenny" class="jenny">
+<img src="jennyNo.png" id="jennyNo">
+<img src="b1.png" id="b2">
+<h3 id="b2t">Happy birthday!</h3>
+<h3 id="b3t">Hannah</h3>
+
+<div id="box">
+  <img src="border.gif" id="border1" class="border"></img>
+  <h5 id="q1">Would you like to accept</h5>
+  <h5 id="q1" style="padding: 15px 15px 0 40px;">the cake?</h5>
+  <button id="yes1" onclick="yes1()">Yes</button>
+  <button id="no1" onclick="no1()">No</button>
+</div>
+
+<img src="b1.png" id="b3">
+<h5 id="b4t"><span style="padding: 0 0 0 10px;">It's okay. Have a </span><br>wonderful birthday!"</h5>
+
+<audio src="hbdHNo.mp3" id="hbdHNo" preload="auto"></audio>
+<audio src="seongS.mp3" id="seongS" preload="auto"></audio>
+
+<h2 id="b5t">Awesome!</h2>
+
+
+<img src="sae.png" id="sae" class="sae">
+<img src="seong.png" id="seong" class="seong">
+<img src="jiaxu.png" id="jiaxu" class="jiaxu">
+<img src="stellvester.png" id="stellvester" class="stellvester">
+<img src="kento.png" id="kento" class="kento">
+<img src="yoon.png" id="yoon" class="yoon">
+<img src="sangyan.png" id="sangyan" class="sangyan">
+<img src="thanos.png" id="thanos" class="thanos">
+<img src="thanosMouth.png" id="thanosMouth">
+<img src="thanosHappy.png" id="thanosHappy">
+
+<div id="darkClaim1"></div>
+
+<div id="demonBox">
+  <img src="demonBorder.jpeg" id="demonBorder">
+  <img src="cake.gif" id="cake2">
+  <button id="claim1" onclick="claimed()">CLAIM</button>
+  <h1 id="claim1H">CAKE</h1>
+  <p id="claimed">CLAIMED</p>
+  <h1 id="exit1" onclick="exit1()">X</h1>
+
+  <!--FIREWORKS-->
+  <canvas id="canvas1"></canvas>
+  <audio id="fireworkSound" src="firework.mp3"></audio>
+</div>
+
+<img src="front.png" id="front" class="front">
+<img src="cardSquid.png" id="cardSquid">
+<img src="seongAngry.png" id="seongAngry">
+
+<div id="squidBox">
+  <img src="squidBorRed.jpg" id="squidBorRed">
+  <img src="squidBorGreen.jpg" id="squidBorGreen">
+  <img src="cardSquid.png" id="cardSquidClaim">
+  <h1 style="padding: 30px 0 0 80px; text-shadow: 3px 2px red; position: absolute; z-index: 101; color: lime">Squid <span style="color: red; text-shadow: 3px 2px green;">Game</span></h1>
+  <h4 style="padding: 70px 0 0 120px; text-shadow: 1px 2px white; position: absolute; z-index: 101; color: yellow">Invitation Card</h4>
+  <button id="squidClaim" onclick="squidClaim()">CLAIM</button>
+  <audio src="vote.mp3" id="vote" preload="auto"></audio>
+  <h1 id="exit2" onclick="exit2()">X</h1>
+</div>
+
+<div id="frontManTimeCover"></div>
+
+<img src="b1.png" id="b4">
+<h4 id="b6t">I've played this <br>game before!</h4>
+
+<!--GIFT BOX-->
+<div id="giftBox">
+  <div id="lid" onclick="func()" >
+    <div id="ribbon1"></div>
+    <div id="ribbon2"></div>
+    <div id="ribbon3"></div>
+  </div>
+  <div id="gift">
+    <div id="ribbon4"></div>
+  </div>
+</div>
+
+<div id="borderMask"></div>
+
+<div id="discoBorder">
+<img src="border.gif" id="border2"></img>
+<p id="partyP"> Would you like to <br>start the party?</p>
+<button id="yes3" onclick="yes3()">yes</button>
+</div>
+
+
+<audio src="discoS.mp3" id="discoS"></audio>
+
+
+<div id="gradientBox"></div>
+
+<img src="discoSilver.gif" id="discoSilver">
+
+<canvas id="confetti-canvas2"></canvas>
+
+<img src="discoGold.gif" id="discoGold">
+
+
+<canvas id="fireworksCanvas"></canvas>
+<audio id="fireworkSound2" src="firework2.mp3" preload="auto"></audio>
+
+<button onclick="startFireworks()" id="firework2">Lets Fireworks</button>
+
+
+<button onclick="proceed()" id="startBtn2">Read</button>
+  <div id="message">Hello!</div>
+
+  <!-- Your custom sound -->
+  <audio id="messageS" src="messageS.mp3" preload="auto"></audio>
+
+
+
+
+
+
+<canvas id="skyCanvas"></canvas>
+
+<canvas id="discoStage"></canvas>
+
+<audio src="messageS2.mp3" id="messageS2" preload="auto"></audio>
+
+
+
+
+
+
+<div id="review">
+<h1 id="finalTitle">That's all yai</h1>
+<p id="name">from:</p>
+  <input id="nameId" name="name" placeholder="Enter your name">
+<textarea type="text" placeholder="Your message to James" id="messageId" name="message" rows="3"></textarea>
+<button id="send" onclick="buttonClick()">send</button>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+</div>
+<script>
+  const assets = [
+  "hbdText.png",
+  "bulbOff.png",
+  "bulbOn.png",
+  "click.mp3",
+  "confetti.mp3",
+  "demonS.mp3",
+  "blowS.mp3",
+  "suprise.mp3",
+  "hbdH.mp3",
+  "bite.mp3",
+  "jennyYes.mp3",
+  "whistle.mp3",
+  "squidSound.mp3",
+  "hbd.mp3",
+  "cake.gif",
+  "blow1.gif",
+  "blow2.gif",
+  "byeon.png",
+  "b1.png",
+  "park.png",
+  "jenny.png",
+  "jennyNo.png",
+  "b1.png", // repeated, still needed for tracking
+  "border.gif",
+  "hbdHNo.mp3",
+  "seongS.mp3",
+  "sae.png",
+  "seong.png",
+  "jiaxu.png",
+  "stellvester.png",
+  "kento.png",
+  "yoon.png",
+  "sangyan.png",
+  "thanos.png",
+  "thanosMouth.png",
+  "thanosHappy.png",
+  "demonBorder.jpeg",
+  "cake.gif", // repeated, but loaded separately
+  "firework.mp3",
+  "front.png",
+  "cardSquid.png",
+  "seongAngry.png",
+  "squidBorRed.jpg",
+  "squidBorGreen.jpg",
+  "cardSquid.png", // again
+  "vote.mp3",
+  "b1.png", // again
+  "border.gif", // again
+  "discoS.mp3",
+  "discoSilver.gif",
+  "discoGold.gif",
+  "firework2.mp3",
+  "messageS.mp3",
+  "messageS2.mp3"
+];
+
+
+  const total = assets.length;
+  let loaded = 0;
+
+  function updateProgress() {
+    loaded++;
+    const percent = Math.floor((loaded / total) * 100);
+    document.getElementById("loadingText").textContent = `Loading... ${percent}%`;
+
+    if (loaded === total) {
+      document.getElementById("preloader").style.display = "none";
+      document.getElementById("mainContent").style.display = "block";
+    }
+  }
+
+  assets.forEach(src => {
+    if (/\.(jpg|jpeg|png|gif|webp)$/i.test(src)) {
+      const img = new Image();
+      img.onload = updateProgress;
+      img.onerror = updateProgress;
+      img.src = src;
+    } else if (/\.(mp3|wav|ogg)$/i.test(src)) {
+      const audio = new Audio();
+      audio.oncanplaythrough = updateProgress;
+      audio.onerror = updateProgress;
+      audio.src = src;
+    }
+  });
+</script>
+<script src="main.js"></script>
+<script src="confetti2.js"></script>
+</body>
+</html>
+
