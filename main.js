@@ -801,7 +801,7 @@ el2.offsetHeight; // Force reflow (browser trick)
 proceed();
 
 
-},16000)
+},25000)
 
   
   
